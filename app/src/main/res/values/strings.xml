@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="home_title">Example Notifications</string>
+    <string name="button_deep_link">Deep Link</string>
+    <string name="button_web">Web Address</string>
+    <string name="button_launch">Launch App</string>
+    <string name="button_bundle">Bundle of Notifications</string>
+    <string name="button_stack">Stack of Notifications</string>
+    <string name="button_remote_input">Remote Input</string>
+</resources>
