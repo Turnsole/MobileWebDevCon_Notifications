@@ -38,11 +38,6 @@
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/button_stack"
-        android:text="@string/button_stack"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"/>
-    <Button
         android:id="@+id/button_remote_input"
         android:text="@string/button_remote_input"
         android:layout_width="@dimen/button_width"

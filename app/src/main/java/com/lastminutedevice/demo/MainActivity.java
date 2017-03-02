@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            new DemoNotificationManager(MainActivity.this).createNotification(view.getId());
+            new NotificationDemo(MainActivity.this).createNotification(view.getId());
         }
     };
 
@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 R.id.button_deep_link,
                 R.id.button_launch,
                 R.id.button_remote_input,
-                R.id.button_stack,
                 R.id.button_web
         };
         for (int id : buttonIds) {

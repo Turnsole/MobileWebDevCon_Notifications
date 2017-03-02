@@ -7,4 +7,7 @@
     <string name="button_bundle">Bundle of Notifications</string>
     <string name="button_stack">Stack of Notifications</string>
     <string name="button_remote_input">Remote Input</string>
+
+
+    <string name="content_interior_activity">Interior Activity</string>
 </resources>
