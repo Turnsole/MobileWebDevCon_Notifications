@@ -9,6 +9,8 @@ import android.net.Uri;
 import android.support.v4.app.RemoteInput;
 import android.support.v7.app.NotificationCompat;
 
+import static android.support.v4.app.NotificationCompat.VISIBILITY_PRIVATE;
+import static android.support.v4.app.NotificationCompat.VISIBILITY_PUBLIC;
 import static com.lastminutedevice.demo.DemoBroadcastReceiver.REMOTE_INPUT_KEY;
 
 /**
@@ -66,6 +68,7 @@ public class NotificationDemo {
          * The first group.
          */
         builder.setGroup("group one");
+        builder.setVisibility(VISIBILITY_PUBLIC); // Show all this content on the lock screen.
 
         String[] contents = new String[] {"Message One", "Message Two", "Summary One"};
         for (String content : contents) {
@@ -80,6 +83,12 @@ public class NotificationDemo {
         builder.setGroup("key two");
         int color = mAppContext.getResources().getColor(R.color.colorAccent);
         builder.setColor(color);
+
+        /**
+         * Show only a preview of the content on the lock screen.
+         * VISIBILITY_SECRET would keep the notification off the lock screen entirely.
+         */
+        builder.setVisibility(VISIBILITY_PRIVATE);
 
         contents = new String[] {"Message Three", "Message Four", "Summary Two"};
         for (String content : contents) {
